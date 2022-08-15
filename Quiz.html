@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <script type = "text/javascript">
+        function validateform(){  
+            var fname=document.myform.fname.value;  
+            // var lname=document.myform.lname.value; 
+            var email=document.myform.email.value;
+            var phone=document.myform.phone.value;
+            var CricketUpdates=document.myform.CricketUpdates.value;  
+            // var email=document.myform.email.value;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf(".");
+            var phoneno = /^\d{10}$/;   
+  
+            if (fname==null || fname==""){  
+                alert("First Name can't be blank");  
+                return false;  
+            }
+            // else if(lname == null || lname == ""){  
+            //     alert("Last Name can't be blank");  
+            //     return false;  
+            // }
+            else if(email == null || email == ""){
+                alert("Email can't be blank");
+                return false;
+            } 
+            else if(phone == null || phone == ""){
+                alert("Phone number can't be blank");
+                return false;
+            }
+            else if(CricketUpdates == null || CricketUpdates == ""){
+                alert("Please select one option out of the two for whether you wish to receive updates from our side or not!");
+                return false;
+            } 
+            else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+                alert("Please enter a valid e-mail address \nCurrent Positions: \n  Position of @: "+(atposition+1)+"\n  Position of .: "+(dotposition+1));  
+                return false;  
+            }  
+            else if(true)
+            {
+                if(phone.match(phoneno)){
+                    return true;
+                }
+                else{
+                    alert("Not a valid Phone Number");
+                    return false;
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-image: url('https://i.pinimg.com/originals/de/56/53/de56534a8b6a54ab83a03ca7dd9fccd4.gif');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <form name = "myform" action = "Thank You Page.html" target = "_self" autocomplete="on" onsubmit="return(validateform());">
+        <label for="fname">Enter your First Name:*</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br><label for="lname">Enter your Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br><label for="email">Enter your Email Id:*</label><br>
+        <input type="email"  id="email" name="email"><br>
+        <br><label for="phone">Enter your Phone Number:*</label><br>
+        <input type="tel" id="phone" name="phone">
+        <p>Do you want to receive cricket updates from our side?*</p>
+        <input type="radio" id="Yes" name="CricketUpdates" value="Yes">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" id="No" name="CricketUpdates" value="No">
+        <label for="No">No</label><br>
+        <br><input type = "submit" value = "Submit">
+      </form>
+</body>
+</html>

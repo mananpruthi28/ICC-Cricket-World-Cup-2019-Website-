@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="IPLTeams.xsl"?>
+<Points_Table>
+<IPL>
+<TeamName>Gujarat Titans</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>10</MatchesWon>
+<Points>20</Points>
+<TopPerformer>Hadik Pandya</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Rajasthan Royals</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>9</MatchesWon>
+<Points>18</Points>
+<TopPerformer>Jos Buttler</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Lucknow Super Giants</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>9</MatchesWon>
+<Points>18</Points>
+<TopPerformer>KL Rahul</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Royal Challengers Bangalore</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>8</MatchesWon>
+<Points>16</Points>
+<TopPerformer>Dinesh Karthik</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Delhi Capitals</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>7</MatchesWon>
+<Points>14</Points>
+<TopPerformer>David Warner</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Punjab Kings</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>7</MatchesWon>
+<Points>14</Points>
+<TopPerformer>Shikhar Dhawan</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Kolkata Knight Riders</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>6</MatchesWon>
+<Points>12</Points>
+<TopPerformer>Umesh Yadav</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Sunrisers Hyderabad</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>6</MatchesWon>
+<Points>12</Points>
+<TopPerformer>Umraan Malik</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Chennai Super Kings</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>4</MatchesWon>
+<Points>8</Points>
+<TopPerformer>MS Dhoni</TopPerformer>
+</IPL>
+<IPL>
+<TeamName>Mumbai Indians</TeamName>
+<MatchesPlayed>14</MatchesPlayed>
+<MatchesWon>4</MatchesWon>
+<Points>8</Points>
+<TopPerformer>Dewald Brevis</TopPerformer>
+</IPL>
+</Points_Table>

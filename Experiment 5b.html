@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Date And Time</title>
+    <!-- <link rel="stylesheet" type = "text/css" href="External CSS.css"> -->
+    <style>
+    #time{
+        color: white;
+        font-size: 25px;
+    }
+    h1 {text-align: center;
+            /* color: black; */
+            font-family: verdana;
+            font-size: 300%;}
+    body {
+        background-repeat: no-repeat;
+        background-image: url('https://i.pinimg.com/originals/ed/3b/a2/ed3ba2f08b691d6ba5815fb2a623a275.gif');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    p{color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 130%; 
+    }
+        </style>
+</head>
+<h1 style="font-size: 70px" id="time">THE WHEEL OF TIME</h1>
+<body>
+    
+    <p> Today's Date is <span class="output" id = "display"></span></p> 
+  
+    <button onclick="getCurrentDate()">Get Today's Date</button>
+    <!-- <br> -->
+
+    <p> <br>Today's Day is <span class="output" id = "display1"></span></p>
+  
+    <button onclick="getCurrentDay()">Get Today's Day</button>
+
+    <p> <br>The Current Time is <span class="output" id = "display2"></span></p>
+    <button onclick="getCurrentTime()">Get Current Time</button>
+
+    <p> <br>The thought of the day is <span class="output"></span></p>
+    <button onclick="getTodaysThought()">Get Thought Of The Day</button>
+    <p><span id = "display3"></span></p>
+    <!-- <div id="results"></div> -->
+     
+    <script type="text/javascript">
+    function getCurrentDate() {
+        // let date = new Date().toDateString();
+        // document.querySelector('.output').textContent = date;
+        let dateObj = new Date();
+            let month = String(dateObj.getMonth() + 1).padStart(2, '0');
+            let day = String(dateObj.getDate()).padStart(2, '0');
+            let year = dateObj.getFullYear();
+            let output = day + '/' + month + '/' + year;
+            // document.querySelector('.output').textContent = output;
+            document.getElementById("display").innerHTML = output;
+        }
+        function getCurrentDay() {
+            var myDate = new Date();
+            var myDay = myDate.getDay();
+            // Array of days.
+            var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            document.getElementById("display1").innerHTML = weekday[myDay];
+            // document.write("Today is : " + weekday[myDay]);
+            // document.write("<br/>");
+            // const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            // const d = new Date();
+            // let day = weekday[d.getDay()];
+            // document.querySelector('.day').textContent = day;
+            // const d = new Date();
+            // let day = d.getDay();
+            // document.querySelector('.day').textContent = day;
+            // var day1 = today.getDay();
+            // var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            // console.log("Today is : " + daylist[day1] + ".");
+        }
+        function getCurrentTime() {
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            document.getElementById("display2").innerHTML = time;
+        }
+        function getTodaysThought() {
+            var thought = "'An inch of time is an inch of gold but you can't buy that inch of time with an inch of gold...'";
+            document.getElementById("display3").innerHTML = thought;
+        }
+    </script>
+</body>

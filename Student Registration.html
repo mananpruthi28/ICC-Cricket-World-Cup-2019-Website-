@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Page</title>
+    <script type = "text/javascript">
+        function validateform(){  
+            var fname=document.myform.fname.value;  
+            var lname=document.myform.lname.value; 
+            var email=document.myform.email.value;
+            var phone=document.myform.phone.value;
+            var college=document.myform.college.value;
+            var rollno=document.myform.rollno.value;
+            var EdUpdates=document.myform.EdUpdates.value;  
+            var Sub1=document.myform.Sub1.value;
+            var Sub2=document.myform.Sub2.value;
+            var Sub3=document.myform.Sub3.value;
+            var Sub4=document.myform.Sub4.value;
+            var Sub5=document.myform.Sub5.value;
+            // var email=document.myform.email.value;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf(".");
+            var phoneno = /^\d{10}$/;   
+  
+            if (fname==null || fname==""){  
+                alert("First Name can't be blank");  
+                return false;  
+            }
+            // else if(lname == null || lname == ""){  
+            //     alert("Last Name can't be blank");  
+            //     return false;  
+            // }
+            else if(email == null || email == ""){
+                alert("Email can't be blank");
+                return false;
+            } 
+            else if(phone == null || phone == ""){
+                alert("Phone number can't be blank");
+                return false;
+            }
+            else if (college==null || college==""){  
+                alert("College Name can't be blank");  
+                return false;  
+            }
+            else if (rollno==null || rollno==""){  
+                alert("Roll Number can't be blank");  
+                return false;  
+            }
+            else if (Sub1==null || Sub1==""){  
+                alert("Subject 1 marks can't be blank");  
+                return false;  
+            }
+            else if (Sub2==null || Sub2==""){  
+                alert("Subject 2 marks can't be blank");  
+                return false;  
+            }
+            else if (Sub3==null || Sub3==""){  
+                alert("Subject 3 marks can't be blank");  
+                return false;  
+            }
+            else if (Sub4==null || Sub4==""){  
+                alert("Subject 4 marks can't be blank");  
+                return false;  
+            }
+            else if (Sub5==null || Sub5==""){  
+                alert("Subject 5 marks can't be blank");  
+                return false;  
+            }
+            else if(EdUpdates == null || EdUpdates == ""){
+                alert("Please select one option out of the two for whether you wish to receive updates from our side or not!");
+                return false;
+            } 
+            else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+                alert("Please enter a valid e-mail address \nCurrent Positions: \n  Position of @: "+(atposition+1)+"\n  Position of .: "+(dotposition+1));  
+                return false;  
+            }  
+            else if(true)
+            {
+                if(phone.match(phoneno)){
+                    return true;
+                }
+                else{
+                    alert("Not a valid Phone Number");
+                    return false;
+                }
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-image: url('https://i.makeagif.com/media/10-22-2020/Pms24f.gif');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <h1 style="font-size: 70px; color: brown; text-align: center;">STUDENT REGISTRATION FORM</h1>
+    <form style="text-align: center; " name = "myform" action = "Calculations.html" target = "_self" autocomplete="on" onsubmit="return(validateform());">
+        <label for="fname"><b>Enter your First Name:*</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <br><label for="lname">Enter your Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <br><label for="email">Enter your Email Id:*</label><br>
+        <input type="email"  id="email" name="email"><br>
+        <br><label for="phone">Enter your Phone Number:*</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+        <br><label for="college">Enter your College Name:*</label><br>
+        <input type="text" id="college" name="college"><br>
+        <br><label for="rollno">Enter your Enrollment Number:*</label><br>
+        <input type="number" id="rollno" name="rollno"><br>
+        <br><p>Performance Analyzer (Enter marks of your best 5 subjects in the last semester)</p>
+        <label for="Sub1">Subject 1*</label><br>
+        <input type="number" id="Sub1" name="Sub1" min="0" max="100"><br>
+        <br><label for="Sub2">Subject 2*</label><br>
+        <input type="number" id="Sub2" name="Sub2" min="0" max="100"><br>
+        <br><label for="Sub3">Subject 3*</label><br>
+        <input type="number" id="Sub3" name="Sub3" min="0" max="100"><br>
+        <br><label for="Sub4">Subject 4*</label><br>
+        <input type="number" id="Sub4" name="Sub4" min="0" max="100"><br>
+        <br><label for="Sub5">Subject 5*</label><br>
+        <input type="number" id="Sub5" name="Sub5" min="0" max="100"><br>
+        <br><p>Do you want to subscribe to our newsletter?*</p>
+        <input type="radio" id="Yes" name="EdUpdates" value="Yes">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" id="No" name="EdUpdates" value="No">
+        <label for="No">No</label><br>
+        <br><input type = "submit" value = "Submit">
+      </form>
+</body>
+</html>

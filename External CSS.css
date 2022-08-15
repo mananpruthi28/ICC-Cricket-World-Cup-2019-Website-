@@ -1,0 +1,50 @@
+#cricket{               /* --> id */
+    color: green;
+    font-size: 25px;
+}
+h1 {text-align: center;
+    color: black;
+    font-family: verdana;
+    font-size: 300%;}
+body{
+        
+        background-image: url('');
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-size: cover;
+        /* color: #FFFFFF; */
+        border: 5px solid rgb(176, 230, 180);
+        padding: 10px;
+    }
+    p{color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 130%; 
+    }
+    th{
+        border: 1px solid;
+        padding: 15px;
+        /* border-bottom: 1px solid #ddd; */
+        background-color: #e048d9;
+        color: black;
+    }
+    td{
+        border: 1px solid;
+        text-align: center;
+        padding: 15px;
+        /* border-bottom: 1px solid #ddd; */
+    }
+    table {
+        width: 100%;
+        border: 1px solid;
+        /* border-collapse: collapse; */
+        border-collapse: collapse;
+    }
+    .worldcup{        /* --> class */
+        color: blue;
+        font-size: 25px;
+
+    }
+    
+    tr:nth-child(even) {background-color: lightgreen;}
+    tr:nth-child(odd) {background-color:orange ;}
+    tr:hover {background-color: coral;}

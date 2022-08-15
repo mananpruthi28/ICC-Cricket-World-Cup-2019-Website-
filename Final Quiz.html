@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Ultimate Cricket Quiz</title>
+    <style>
+    /* h1{color: white;} */
+    body {
+        background-repeat: no-repeat;
+        background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/watermarks/image/rDtN98Qoishumwih/abstract-cricket-background_7yWMMb_SB_PM.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1 {text-align: center;
+            color: black;
+            font-family: verdana;
+            font-size: 300%;}
+    </style>
+    <script language = "javascript">
+        function quiz(form)
+        {
+            var i = 0;
+            // var Ques1=document.form.Question1.value; 
+            // var Ques2=document.form.Question2.value; 
+            // var Ques3=document.form.Question3.value; 
+            // var Ques4=document.form.Question4.value; 
+            // var Ques5=document.form.Question5.value;  
+            if(form.Question1[0].checked)
+            {i = i + 1;}
+            if(form.Question2[1].checked)
+            {i = i + 1;}
+            if(form.Question3[3].checked)
+            {i = i + 1;}
+            if(form.Question4[3].checked)
+            {i = i + 1;}
+            if(form.Question5[2].checked)
+            {i = i + 1;}
+            
+            window.alert("Thank you for taking the Ultimate Cricket Quiz! Your score is: " + i + "/5." + "\n" + "Your certificate of participation has been mailed to you along with a gift voucher...");
+        }
+    </script>
+</head>
+<body>
+    <form target = "_self" autocomplete="on" onsubmit="quiz(this);">
+        <center><h1><blink>WELCOME TO THE ULTIMATE CRICKET QUIZ</blink></h1></center>
+        <p>
+        <h1 style = "font-size: 15px; text-align: justify;">Q1. Who was the top run scorer in the World Cup 2019?</h1>
+        <input type="radio" id="Q1" name="Question1" value="Rohit Sharma">
+        <label>Rohit Sharma</label><br>
+        <input type="radio" id="Q2" name="Question1" value="David Warner">
+        <label>David Warner</label><br>
+        <input type="radio" id="Q3" name="Question1" value="Virat Kohli">
+        <label>Virat Kohli</label><br>
+        <input type="radio" id="Q4" name="Question1" value="Shakib Al Hasan">
+        <label>Shakib Al Hasan</label><br>
+        </p>
+        <p>
+            <h1 style = "font-size: 15px; text-align: justify;">Q2. Who was the top wicket taker in the World Cup 2019?</h1>
+            <input type="radio" id="Q1" name="Question2" value="Jasprit Bumrah">
+            <label>Jasprit Bumrah</label><br>
+            <input type="radio" id="Q2" name="Question2" value="Mitchell Starc">
+            <label>Mitchell Starc</label><br>
+            <input type="radio" id="Q3" name="Question2" value="Jofra Archer">
+            <label>Jofra Archer</label><br>
+            <input type="radio" id="Q4" name="Question2" value="Lockie Feguson">
+            <label>Lockie Ferguson</label><br>    
+        </p>
+        <p>
+            <h1 style = "font-size: 15px; text-align: justify;">Q3. Against which opponent did Virat Kohli not score a half-century?</h1>
+            <input type="radio" id="Q1" name="Question3" value="West Indies">
+            <label>West Indies</label><br>
+            <input type="radio" id="Q2" name="Question3" value="Pakistan">
+            <label>Pakistan</label><br>
+            <input type="radio" id="Q3" name="Question3" value="Australia">
+            <label>Australia</label><br>
+            <input type="radio" id="Q4" name="Question3" value="South Africa">
+            <label>South Africa</label><br>
+            </p>
+
+            <p>
+                <h1 style = "font-size: 15px; text-align: justify;">Q4. How many sixes did Chris Gayle hit in the World Cup 2019?</h1>
+                <input type="radio" id="Q1" name="Question4" value="5">
+                <label>5</label><br>
+                <input type="radio" id="Q2" name="Question4" value="7">
+                <label>7</label><br>
+                <input type="radio" id="Q3" name="Question4" value="20">
+                <label>20</label><br>
+                <input type="radio" id="Q4" name="Question4" value="26">
+                <label>26</label><br>
+                </p>
+                <p>
+                    <h1 style = "font-size: 15px; text-align: justify;">Q5. Which team won the World Cup 2019?</h1>
+                    <input type="radio" id="Q1" name="Question5" value="India">
+                    <label>India</label><br>
+                    <input type="radio" id="Q2" name="Question5" value="Australia">
+                    <label>Australia</label><br>
+                    <input type="radio" id="Q3" name="Question5" value="England">
+                    <label>England</label><br>
+                    <input type="radio" id="Q4" name="Question5" value="Newzealand">
+                    <label>Newzealand</label><br>
+                    </p>
+
+        <!-- <p>Q2. Write the names of players in India's squad.</p>
+        <textarea name="message" rows="15" cols="30">
+
+        </textarea>
+        <p>Q3. Which two teams were able to beat India?</p>
+        <input type="checkbox" id="Q3." name="Questions" value="Pakistan">
+        <label for="Question 3.">Pakistan</label><br>
+        <input type="checkbox" id="Q3.." name="Questions" value="England">
+        <label for="Question 3.">England</label><br>
+        <input type="checkbox" id="Q3..." name="Questions" value="West Indies">
+        <label for="Question 3.">West Indies</label><br>
+        <input type="checkbox" id="Q3....." name="Questions" value="Newzealand">
+        <label for="Question 3.">Newzealand</label><br> -->
+
+        <br><p><center>
+            <input type = "submit" value = "SUBMIT">
+            <input type = "reset"  value = "RESET">
+        </center></p>
+        <!-- <button type = "button" onclick="alert('Your score has been sent to your email id. Check it out and see whether you have won a goodie or not!')">SUBMIT</button> -->
+      </form>
+</body>
+</html>

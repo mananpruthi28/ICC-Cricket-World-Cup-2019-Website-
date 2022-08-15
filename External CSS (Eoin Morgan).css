@@ -1,0 +1,52 @@
+h1 {text-align: center;
+    color: black;
+    font-family: verdana;
+    font-size: 300%;}
+body{
+    
+    background-image: url('');
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+    /* color: #FFFFFF; */
+    border: 5px solid rgb(230, 176, 192);
+        padding: 10px;
+}
+p{color: black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 130%; 
+    }
+th{
+        border: 1px solid;
+        padding: 15px;
+        /* border-bottom: 1px solid #ddd; */
+        background-color: #91e048;
+        color: black;
+    }
+    td{
+        border: 1px solid;
+        text-align: center;
+        padding: 15px;
+        /* border-bottom: 1px solid #ddd; */
+    }
+    table {
+        width: 100%;
+        border: 1px solid;
+        /* border-collapse: collapse; */
+        border-collapse: collapse;
+        background-image: "Flag_of_England.gif";
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #eoinmorgan{           /* --> id */
+    color:darkmagenta;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.captainmorgan{               /* --> class */
+        color:coral;
+        font-size: 20px;
+
+    }
+    tr:hover {background-color: coral;}
